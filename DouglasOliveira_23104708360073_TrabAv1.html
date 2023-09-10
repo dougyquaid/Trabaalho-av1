@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Venda de Jogos</title>
+  <meta charset="utf-8">
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; padding: 0; text-align: center;">
+
+  <header style="background-color: #333; color: white; padding: 20px;">
+    <h1>Loja de Jogos Retrô</h1>
+  </header>
+
+  <section style="margin: 20px;">
+    <h2>Alguns Dos Nossos Jogos</h2>
+    <table style="border-collapse: collapse; width: 80%; margin: 0 auto;">
+      <tr style="background-color: #333; color: white;">
+        <th style="border: 1px solid #333; padding: 10px;">Produto</th>
+        <th style="border: 1px solid #333; padding: 10px;">Plataforma</th>
+        <th style="border: 1px solid #333; padding: 10px;">Preço</th>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #333; padding: 10px;">X-Men Origins: Wolverine</td>
+        <td style="border: 1px solid #333; padding: 10px;">PS4</td>
+        <td style="border: 1px solid #333; padding: 10px;">R$ 59,90</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #333; padding: 10px;">Need for Speed: Most Wanted</td>
+        <td style="border: 1px solid #333; padding: 10px;">Xbox One</td>
+        <td style="border: 1px solid #333; padding: 10px;">R$ 49,90</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #333; padding: 10px;">Max Payne 2</td>
+        <td style="border: 1px solid #333; padding: 10px;">PC</td>
+        <td style="border: 1px solid #333; padding: 10px;">R$ 29,90</td>
+      </tr>
+    </table>
+  </section>
+
+  <section style="margin: 20px;">
+    <h2>Imagens Dos Jogos</h2>
+    <img src="https://capadedvd.files.wordpress.com/2010/01/x-men_origins_wolverine_custom-5bcdcovers_cc5d-front.jpg" style="width: 30%;">
+    <img src="https://capadedvd.files.wordpress.com/2009/12/nfs-mostwanted.jpg?w=300" style="width: 30%;">
+    <img src="https://capadedvd.files.wordpress.com/2009/12/maxpayne2.jpg?w=300" style="width: 30%;">
+  </section>
+
+  <section style="margin: 20px;">
+    <h2>Trailer do jogo Max Payne 2</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/iLNO4oq2bx8?si=n4SgE5PUYzlJuiWy" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <section style="margin: 20px;">
+    <h2>Formulário de Compra</h2>
+    <form action="processar_compra" method="post">
+      <label for="produto">Selecione o produto:</label>
+      <select name="produto" id="produto">
+        <option value="xmen">X-Men Origins: Wolverine - R$ 59,90</option>
+        <option value="nfs">Need for Speed: Most Wanted - R$ 49,90</option>
+        <option value="maxpayne">Max Payne 2 - R$ 29,90</option>
+      </select>
+      <br><br>
+      <label for="quantidade">Quantidade desejada:</label>
+      <input type="number" name="quantidade" id="quantidade" min="1" value="1">
+      <br><br>
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome">
+      <br><br>
+      <label for="email">E-mail:</label>
+      <input type="email" name="email" id="email">
+      <br><br>
+      <input type="submit" value="Comprar">
+    </form>
+  </section>
+
+  <footer style="background-color: #333; color: white; padding: 10px;">
+    <p>Criado por Douglas Oliveira</p>
+  </footer>
+
+</body>
+</html>
